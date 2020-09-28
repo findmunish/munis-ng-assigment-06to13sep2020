@@ -1,0 +1,34 @@
+<p>reactive-customer-form works!</p>
+
+<form [formGroup]="customerFormData" (ngSubmit)="onSubmit()">
+  <label>First Name:
+    <input type="text" formControlName="firstName" required>
+  </label>
+  <br/>
+  <label>Last Name:
+    <input type="text" formControlName="lastName" required>
+  </label>
+  <br/>
+  <label>Select Gender:
+    <select formControlName="gender" required>
+      <option male>Male</option>
+      <option female>Female</option>
+      <option others>Others</option>
+    </select>
+  </label>
+  <br/><br/>
+  <div formGroupName="contactDetails">
+    <h2>Contact Details</h2>
+    <label>
+      Email:
+      <input type="text" formControlName="email" required>
+    </label>
+    <br/>
+    <label>
+      Contact Num:
+      <input type="text" formControlName="contactNum" required>
+    </label>
+    <br/>
+  </div>
+  <button type="submit">Submit</button>
+</form>

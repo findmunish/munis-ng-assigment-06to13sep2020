@@ -1,0 +1,24 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<p>Assignments</p>
+<div>
+  <button (click)="showAssignment1()">Show Assignment (06-Sep-2020)</button>
+  <div *ngIf="isAssignment1">
+    <app-assignment-06-sep-2020-comp> </app-assignment-06-sep-2020-comp>
+  </div>
+</div>
+<div>
+  <button (click)="showAssignment2()">Show Assignment (12-Sep-2020)</button>
+  <div *ngIf="isAssignment2">
+    <app-assignment-12-sep-2020-comp> </app-assignment-12-sep-2020-comp>
+  </div>
+</div>
+<div>
+  <button (click)="showAssignment3()">Show Assignment (13-Sep-2020)</button>
+  <div *ngIf="isAssignment3">
+    <app-assignment-13-sep-2020-comp></app-assignment-13-sep-2020-comp>
+  </div>
+</div>
